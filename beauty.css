@@ -1,0 +1,13 @@
+/* 1. Hiệu ứng đổ bóng (box-shadow) cho input */
+input {
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+}
+
+/* 2. Dùng ::before và ::after để trang trí tiêu đề */
+h2::before, h2::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: black;
+    display: inline-block;
+}

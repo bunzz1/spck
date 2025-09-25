@@ -1,0 +1,77 @@
+/* Nền tối tổng thể */
+body {
+  background: #111827;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #e5e7eb;
+  margin: 20px;
+}
+
+/* Thanh tìm kiếm */
+.search-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.search-container input,
+.search-container select {
+  flex: 1;
+  min-width: 120px;
+  padding: 7px 10px;
+  border: 1px solid #374151;
+  border-radius: 4px;
+  background: #1f2937;
+  color: #d1d5db;
+  font-size: 13px;
+}
+
+.search-container input::placeholder {
+  color: #9ca3af;
+}
+
+.search-btn {
+  padding: 7px 14px;
+  border: none;
+  border-radius: 4px;
+  background: #16a34a; /* xanh lá chủ đạo */
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.search-btn:hover {
+  background: #15803d;
+}
+
+/* Nút vị trí */
+.roles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  background: #1f2937;
+  padding: 10px;
+  border: 1px solid #374151;
+  border-radius: 6px;
+}
+
+.role {
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #d1d5db;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.role:hover {
+  background: #16a34a;
+  border-color: #16a34a;
+  color: white;
+}

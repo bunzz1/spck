@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tìm cầu thủ CH FC ONLINE</title>
+  <link rel="icon" type="image/png" href="https://cdn-gop.garenanow.com/gop/app/0000/032/837/icon.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d1117;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      background: url('https://fconline.garena.vn/wp-content/uploads/2025/04/bell.jpg') no-repeat center center fixed;
+       background-size: cover; /* co giãn ảnh full màn hình */
+    }
+    .player-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1a1a1a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.player-table th {
+  text-align: left;
+  padding: 8px;
+  background: #2a2a2a;
+  color: #bbb;
+  font-weight: bold;
+}
+
+.player-table td {
+  padding: 8px;
+  border-bottom: 1px solid #333;
+  vertical-align: middle;
+}
+
+.player-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.ovr {
+  color: violet;
+  font-weight: bold;
+}
+
+.sta {
+  color: #00ff99;
+  font-weight: bold;
+}
+
+
+    /* HEADER */
+    header {
+      background: #161b22;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      border-bottom: 2px solid #30363d;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 35px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 5px;
+      transition: 0.2s;
+    }
+
+    .menu a:hover {
+      background: #1f6feb;
+    }
+
+    /* CONTAINER */
+    .container {
+      width: 1000px;
+      margin: 30px auto;
+      background: #161b22;
+      padding: 20px;
+      border-radius: 10px;
+      min-height: 600px;
+    }
+
+    .search-bar {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .search-bar input {
+      flex: 1;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .search-bar button {
+      background: #1f6feb;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .filters {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .filters select {
+      padding: 6px;
+      border-radius: 5px;
+      border: none;
+      width: 100%;
+    }
+
+    .positions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 20px;
+    }
+
+    .positions button {
+      background: #30363d;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+.mua-the {
+  display: flex;
+  gap: 20px;         /* khoảng cách giữa các thẻ */
+  align-items: center; 
+}
+
+.mua {
+  text-align: center;
+  background: #1c1c1c;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.mua img {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+}
+.mua p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #fff;
+}
+  </style>
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <a href="spck.html"><img src="https://fconline.garena.vn/wp-content/uploads/2023/09/logo.png" alt="Logo"></a>
+    </div>
+    <nav class="menu">
+      <a href="spck.html">🏠Trang chủ</a>
+      <a href="index.html">📰Tin tức</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Seasons -->
+    <h3 style="margin-top:0;">Các mùa thẻ</h3>
+    <div class="mua-the">
+      <div class="mua">
+        <a href="./CH.html">
+          <img src="https://i.fo4players.com/property/class/class2011.png?t=20250828" alt="CH">
+          <p>CH</p>
+        </a>
+      </div>
+      <div class="mua">
+        <a href="./DCB.html">
+          <img src="https://i.fo4players.com/property/class/class2010.png?t=20250828" alt="DCB">
+          <p>DCB</p>
+        </a>
+      </div>
+      <div class="mua">
+        <a href="./25TOTS.html">
+          <img src="https://i.fo4players.com/property/class/class1992.jpg?t=20250627" alt="25TOTS">
+          <p>25TOTS</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Table: cầu thủ -->
+    <div style="margin-top:32px;">
+      <table class="player-table">
+        <thead>
+          <tr>
+            <th>POS</th>
+            <th>NAME</th>
+            <th>FP</th>
+            <th>OVR</th>
+            <th>STA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ST</td>
+            <td>
+              <a href="./van-basten-ch.html" style="color: white; text-decoration: none;">
+                <img src="https://s1.fifaaddict.com/fo4/players/dydzqvrky.png?20250613" class="player-img">
+                Marco van Basten
+              </a>
+            </td>
+            <td>30</td>
+            <td class="ovr">121</td>
+            <td class="sta">123</td>
+          </tr>
+          <tr>
+            <td>ST</td>
+            <td>
+              <a href="./torres-ch.html" style="color: white; text-decoration: none;">
+                <img src="https://s1.fifaaddict.com/fo4/players/zlmnljpzd.png?20250613" class="player-img">
+                Fernando Torres
+              </a>
+            </td>
+            <td>32</td>
+            <td class="ovr">119</td>
+            <td class="sta">116</td>
+          </tr>
+          <tr>
+            <td>GK</td>
+            <td>
+              <a href="./donnarumma-ch.html" style="color: white; text-decoration: none;">
+                <img src="https://s1.fifaaddict.com/fo4/players/vgmvzyldr.png?20250613" class="player-img">
+                Gianluigi Donnarumma
+              </a>
+            </td>
+            <td>28</td>
+            <td class="ovr">119</td>
+            <td class="sta">79</td>
+          </tr>
+          <tr>
+            <td>LW</td>
+            <td>
+              <a href="./di-maria-ch.html" style="color: white; text-decoration: none;">
+                <img src="https://s1.fifaaddict.com/fo4/players/dydzqkdlm.png?20250613" class="player-img">
+                Ángel Di María
+              </a>
+            </td>
+            <td>29</td>
+            <td class="ovr">119</td>
+            <td class="sta">112</td>
+          </tr>
+          <tr>
+            <td>CM</td>
+            <td>
+              <a href="./gullit-ch.html" style="color: white; text-decoration: none;">
+                <img src="https://s1.fifaaddict.com/fo4/players/opaywnwwq.png?20250613" class="player-img">
+                Ruud Gullit
+              </a>
+            </td>
+            <td>31</td>
+            <td class="ovr">119</td>
+            <td class="sta">109</td>
+          </tr>
+          <tr>
+            <td>CM</td>
+            <td>
+              <a href="./xavi-ch.html" style="color: white; text-decoration: none;">
+                <img src="https://s1.fifaaddict.com/fo4/players/zlmnlajym.png?20250613" class="player-img">
+                Xavi Hernández
+              </a>
+            </td>
+            <td>33</td>
+            <td class="ovr">120</td>
+            <td class="sta">112</td>
+          </tr>
+          <tr>
+            <td>LB</td>
+            <td>
+              <a href="./roberto-carlos-ch.html" style="color: white; text-decoration: none;">
+                <img src="https://s1.fifaaddict.com/fo4/players/njbqjdoqr.png?20250613" class="player-img">
+                Roberto Carlos
+              </a>
+            </td>
+            <td>28</td>
+            <td class="ovr">120</td>
+            <td class="sta">116</td>
+          </tr>
+          <tr>
+            <td>RW</td>
+            <td>
+              <a href="./messi-ch.html" style="color: white; text-decoration: none;">
+                <img src="https://s1.fifaaddict.com/fo4/players/njbqwbvdv.png?20250613" class="player-img">
+                Lionel Messi
+              </a>
+            </td>
+            <td>30</td>
+            <td class="ovr">118</td>
+            <td class="sta">110</td>
+          </tr>
+          <tr>
+            <td>CB</td>
+            <td>
+              <a href="./desailly-ch.html" style="color: white; text-decoration: none;">
+                <img src="https://s1.fifaaddict.com/fo4/players/jgpjgqwdj.png?20250613" class="player-img">
+                Marcel Desailly
+              </a>
+            </td>
+            <td>32</td>
+            <td class="ovr">119</td>
+            <td class="sta">110</td>
+          </tr>
+          <tr>
+            <td>CB</td>
+            <td>
+              <a href="./beckenbauer-ch.html" style="color: white; text-decoration: none;">
+                <img src="https://s1.fifaaddict.com/fo4/players/mzqnwygjl.png?20250613" class="player-img">
+                Franz Beckenbauer
+              </a>
+            </td>
+            <td>31</td>
+            <td class="ovr">120</td>
+            <td class="sta">112</td>
+          </tr>
+          <tr>
+            <td>RB</td>
+            <td>
+              <a href="./cafu-ch.html" style="color: white; text-decoration: none;">
+                <img src="https://s1.fifaaddict.com/fo4/players/pkvdkwpmp.png?20250613" class="player-img">
+                Cafú
+              </a>
+            </td>
+            <td>27</td>
+            <td class="ovr">117</td>
+            <td class="sta">120</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+<style>
+  .container {
+    width: 1000px;
+    margin: 30px auto;
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 600px;
+  }
+  .mua-the {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  .player-table {
+    margin-top: 32px;
+  }
+  .player-table td {
+    padding-left: 16px;
+  }
+  .player-table th {
+    padding-left: 16px;
+  }
+</style>
+<footer style="background:#000; color:#fff; text-align:center; padding:32px 0 18px 0; margin-top:40px;">
+  <img src="https://fconline.garena.vn/wp-content/themes/fc-online/assets/img/logos.png?ver=1.0" alt="FC Online Garena" style="height:48px; margin-bottom:18px;">
+  <div style="max-width:900px; margin:auto; font-size:15px; line-height:1.7;">
+    CÔNG TY CỔ PHẦN GIẢI TRÍ VÀ THỂ THAO ĐIỆN TỬ VIỆT NAM<br>
+    QUYẾT ĐỊNH PHÁT HÀNH TRÒ CHƠI ĐIỆN TỬ G1 TRÊN MẠNG: SỐ 1868/QĐ-BTTTT NGÀY 28/9/2023.<br>
+    ĐỊA CHỈ: TẦNG 6, TÒA NHÀ CAPITAL PLACE, 29 LIỄU GIAI, PHƯỜNG NGỌC HÀ, THÀNH PHỐ HÀ NỘI, VIỆT NAM.<br>
+    ĐIỆN THOẠI LIÊN HỆ: 024 7305 3939<br>
+    EMAIL: LEGAL@GARENA.VN
+  </div>
+</footer>
+<!-- ...existing code... -->
+</body>
+</html>

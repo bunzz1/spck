@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Gianluigi Donnarumma - Continental Heroes</title>
+  <link rel="icon" type="image/png" href="https://cdn-gop.garenanow.com/gop/app/0000/032/837/icon.png">
+  <style>
+    .header-bar {
+      width: 100%;
+      background: #1a1a1a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 30px;
+      border-bottom: 2px solid #444;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      min-height: 60px;
+      box-sizing: border-box;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 40px;
+    }
+    .nav {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+    .nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 6px 18px;
+      border-radius: 6px;
+      transition: 0.3s;
+      font-size: 16px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    .nav a:hover {
+      background: #ffcc00;
+      color: #000;
+      box-shadow: 0 2px 8px rgba(255,204,0,0.2);
+    }
+    body {
+      background: #111;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      padding: 80px 20px 20px 20px; /* thêm top padding để tránh che bởi header */
+                          background: url('https://fconline.garena.vn/wp-content/uploads/2025/04/bell.jpg') no-repeat center center fixed;
+       background-size: cover; /* co giãn ảnh full màn hình */
+    }
+    .card {
+      width: 800px;
+      background: #1a1a1a;
+      border: 2px solid #444;
+      border-radius: 10px;
+      padding: 20px;
+      position: relative;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .player-info {
+      line-height: 1.4;
+    }
+    .player-info h2 {
+      margin: 0;
+      font-size: 24px;
+      color: #ffcc00;
+    }
+    .player-info span {
+      font-size: 14px;
+      color: #aaa;
+    }
+    .player-photo {
+      width: 150px;
+    }
+    .player-photo img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .stats-overall {
+      display: flex;
+      justify-content: space-around;
+      background: #222;
+      margin: 15px 0;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .stats-overall div {
+      text-align: center;
+    }
+    .stats-overall h3 {
+      margin: 0;
+      font-size: 22px;
+      color: #ff4444;
+    }
+    .stats-detail {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .stats-detail div {
+      background: #2a2a2a;
+      padding: 8px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .hidden-skills {
+      margin-top: 15px;
+      background: #222;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .hidden-skills h4 {
+      margin: 0 0 8px 0;
+      color: #ffcc00;
+    }
+    .radar {
+      margin-top: 20px;
+      text-align: center;
+    }
+    canvas {
+      background: #111;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER FC ONLINE -->
+  <div class="header-bar">
+    <div class="logo">
+      <a href="spck.html">
+        <img src="https://fconline.garena.vn/wp-content/uploads/2023/09/logo.png" alt="FC Online Logo">
+      </a>
+    </div>
+    <div class="nav">
+      <a href="spck.html">Trang chủ</a>
+      <a href="./news/index.html">Tin tức</a>
+    </div>
+  </div>
+  <div class="card">
+    <!-- Header -->
+    <div class="header">
+      <div class="player-info">
+        <h2>Gianluigi Donnarumma <img src="https://i.fo4players.com/property/class/class2011.png?t=20250828" class="badgedss y825"></h2> 
+       <span>GK 118 </span><br>
+        <span>MANCHESTER CITY | ITALY 🇮🇹</span><br>
+        <span>25.2.1999 </span><br>
+        <span>196cm | 90kg | 1⭐ TECH</span>
+        <br><span>LEFT FOOT: ⭐⭐⭐</span>
+        <span>RIGHT FOOT: ⭐⭐⭐⭐⭐</span>
+      </div>
+      <div class="player-photo">
+        <img src="https://s1.fifaaddict.com/fo4/players/vgmvzyldr.png?20250613" alt="Gianluigi Donnarumma">
+      </div>
+    </div>
+
+    <!-- Overall Stats -->
+    <div class="stats-overall">
+      <div><h3>78</h3><span>Tốc độ</span></div>
+      <div><h3>120</h3><span>Bay người</span></div>
+      <div><h3>117</h3><span>Bắt bóng</span></div>
+      <div><h3>107</h3><span>Phát bóng</span></div>
+      <div><h3>123</h3><span>Phản xạ</span></div>
+      <div><h3>122</h3><span>Chọn vị trí</span></div>
+    </div>
+
+    <!-- Detail Stats -->
+    <div class="stats-detail">
+      <div>Sức mạnh: 107</div>
+      <div>Tăng tốc: 78</div>
+      <div>Tốc độ: 78</div>
+      <div>Rê bóng: 52</div>
+      <div>Giữ bóng: 75</div>
+      <div>Nhảy: 111</div>
+      <div>Bình tĩnh: 111</div>
+      <div>Sút xa: 43</div>
+      <div>Vô-lê: 33</div>
+      <div>Chọn vị trí: 46</div>
+      <div>Penalty: 44</div>
+      <div>Lực sút: 75</div>
+    </div>
+
+    <!-- Hidden Skills -->
+    <div class="hidden-skills">
+    <div class="hidden-skills">
+      <h4>C. Số ẩn</h4>
+      <p><img src="https://s1.fifaaddict.com/fo4/traits/trait_icon_23.png?20250613" class="badgedss y825">TM đối mặt</p>
+      </p><img src="https://s1.fifaaddict.com/fo4/traits/trait_icon_43.png?20250613" class="badgedss y825"> TM quét<p>
+      </p><img src="https://s1.fifaaddict.com/fo4/traits/trait_icon_43.png?20250613" class="badgedss y825"> TM càn tạt bóng<p> 
+    </div>
+
+    <!-- Radar -->
+    <div class="radar">
+      <canvas id="radarChart" width="300" height="300"></canvas>
+    </div>
+  </div>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('radarChart');
+    new Chart(ctx, {
+      type: 'radar',
+      data: {
+        labels: ['Bay người', 'Bắt bóng', 'Tốc độ', 'Phát bóng', 'Phản xạ', 'Chọn vị trí'],
+        datasets: [{
+          label: 'Chỉ số chính',
+          data: [120, 117, 78, 107, 123, 122],
+          fill: true,
+          backgroundColor: 'rgba(255, 206, 86, 0.2)',
+          borderColor: 'rgba(255, 206, 86, 1)',
+          pointBackgroundColor: 'yellow'
+        }]
+      },
+      options: {
+        scales: {
+          r: {
+            angleLines: { color: '#444' },
+            grid: { color: '#333' },
+            pointLabels: { color: '#fff' }
+          }
+        },
+        plugins: { legend: { display: false } }
+      }
+    });
+  </script>
+</body>
+</html>
